@@ -1,0 +1,56 @@
+/**
+ * Accordion animated component
+ *
+ * Markdown:
+ * ---------
+ * <dl class="AccordionAnimated">
+ *    <dt class="AccordionAnimated-title">Section name</dt>
+ *    <dd class="AccordionAnimated-content">
+ *      [...]
+ *    </dd>
+ * </dl>
+ *
+ */
+
+.AccordionAnimated {
+  margin-bottom: $gutter-width;
+}
+
+.AccordionAnimated-title {
+  background-color: $accordion-title-bg;
+  cursor: pointer;
+  margin: 0;
+  padding: $gutter-width / 2;
+  position: relative;
+  transition: color $animation-duration $animation-transition;
+
+  &:hover {
+    color: $brand-primary;
+  }
+
+  // insert triangle icon
+  &:before {
+    content: '▼';
+    float: right;
+    margin-left: $gutter-width / 2;
+    transition: transform $animation-duration $animation-transition;
+  }
+
+  &.is-open {
+    color: $brand-primary;
+    // rotate triangle icon
+    &:before {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.AccordionAnimated-content {
+  background-color: $accordion-content-bg;
+  color: $accordion-content-color;
+  height: 0;
+  margin: 0 0 2px;
+  overflow: hidden;
+  transition: height $animation-duration $animation-transition;
+  border-bottom: 1px solid $accordion-border-color;
+}

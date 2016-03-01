@@ -1,0 +1,28 @@
+/**
+ * Typography
+ */
+body {
+  font-family: 'Open Sans', Helvetica, Arial;
+  line-height: $body-line-height;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		color: lighten($link-color, 10%);
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 300;
+  line-height: $heading-line-height;
+}
+
+.TextBig {
+	font-size: 2em;
+}

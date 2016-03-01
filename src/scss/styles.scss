@@ -1,0 +1,24 @@
+/**
+ * Front end test styles
+ */
+
+// variables
+@import 'variables';
+
+// main file
+@import 'lib/main';
+
+// lib
+@import 'lib/buttons';
+@import 'lib/helpers';
+@import 'lib/layout';
+@import 'lib/typography';
+
+// partials
+@import 'partials/footer';
+@import 'partials/header';
+
+// components
+@import 'components/accordion-animated';
+@import 'components/loading-bar';
+@import 'components/loading-spinner';

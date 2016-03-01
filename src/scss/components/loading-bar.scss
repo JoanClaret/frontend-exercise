@@ -1,0 +1,57 @@
+/**
+ * Loading bar component
+ *
+ * Markdown:
+ * ---------
+ * <div class="loading-bar"></div>
+ *
+ */
+
+.LoadingBar {
+  height: 4px;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.LoadingBar::before {
+  animation: LoadingBarAnimation 2s linear infinite;
+  background-color: $loading-bar-bg;
+  content: '';
+  display: block;
+  height: 6px;
+  left: -200px;
+  position: absolute;
+  width: 200px;
+}
+
+@keyframes LoadingBarAnimation {
+  from {
+    left: -200px;
+    width: 30%;
+  }
+
+  50% {
+    width: 30%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    left: 50%;
+  }
+
+  95% {
+    left: 120%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

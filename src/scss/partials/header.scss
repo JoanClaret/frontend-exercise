@@ -1,0 +1,21 @@
+/**
+ * Header
+ */
+
+.Header {
+	background: linear-gradient(to bottom, $header-bg-top 0, $header-bg-bottom 100%);
+	color: $header-color;
+	margin-bottom: $gutter-width;
+	padding: $gutter-width * 2;
+	position: relative;
+	text-align: center;
+}
+.Header-picture {
+	border-radius: 100%;
+	border: 3px solid $header-picture-border;
+	bottom: -60px;
+	left: 50%;
+	margin-left: -60px;
+	position: absolute;
+	width: 120px;
+}

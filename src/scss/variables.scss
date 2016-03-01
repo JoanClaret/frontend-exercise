@@ -1,0 +1,44 @@
+/**
+ * Variables
+ */
+
+ // Brand Colors
+$brand-primary:             #27b2aa;
+$body-bg:                   #f1f1f1;
+$body-color:                #3e4145;
+
+
+// Typography
+$body-line-height:          1.6em;
+$heading-line-height:       1.4em;
+$link-color:                $brand-primary;
+
+// Layout
+$gutter-width:              40px;
+$radius:                    3px;
+$page-max-width:            1200px;
+
+// Partials colors
+$footer-bg:					#fff;
+
+$header-bg-top:             #2c97a6;
+$header-bg-bottom:          #a6e1c8;
+$header-color:              #fff;
+$header-picture-border:		#fff;
+
+// Components colors
+$accordion-title-bg:        #fff;
+$accordion-content-bg:      $accordion-title-bg;
+$accordion-content-color:   #7f8991;
+$accordion-border-color:    #dfdfdf;
+
+$button-bg:                 $brand-primary;
+$button-color:              #fff;
+
+$loading-bar-bg:            #fff;
+
+$loading-spinner-bg:        $brand-primary;
+
+// Animations
+$animation-duration:        250ms;
+$animation-transition:      ease-in-out;

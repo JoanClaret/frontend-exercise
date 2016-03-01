@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Accordion Exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="dist/css/normalize.css">
+        <link rel="stylesheet" href="dist/css/styles.min.css">
+    </head>
+    <body>
+        <header class="Header">
+            <h1 class="TextBig">Frontend exercise</h1>
+            <img class="Header-picture" src="dist/img/profile-picture.jpeg" alt="Joan Claret profile picture" />
+        </header>
+        <div class="PageContent">
+            <section> 
+                <header><h1>Accordion animated</h1></header>
+                <dl class="AccordionAnimated">
+                    <dt data-open-target="section-1" data-open-target-group="accordion" class="js-open-target AccordionAnimated-title">Section 1 - Group 1</dt>
+                    <dd data-target="section-1" class="AccordionAnimated-content">
+                        <div class="Content">
+                            <p>My life fades. The vision dims. All that remains are memories. I remember a time of chaos... ruined dreams... this wasted land. But most of all, I remember The Road Warrior. The man we called "Max." To understand who he was, you have to go back to another time... when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. Gone now... swept away. For reasons long forgotten, two mighty warrior tribes went to war, and touched off a blaze which engulfed them all. Without fuel they were nothing.</p>
+                            <p> They'd built a house of straw. The thundering machines sputtered and stopped. Their leaders talked and talked and talked. But nothing could stem the avalanche. Their world crumbled. The cities exploded. A whirlwind of looting, a firestorm of fear. Men began to feed on men. On the roads it was a white line nightmare. Only those mobile enough to scavenge, brutal enough to pillage would survive. The gangs took over the highways, ready to wage war for a tank of juice. And in this maelstrom of decay, ordinary men were battered and smashed... men like Max... the warrior Max. </p>
+                        </div>
+                    </dd>
+                    <dt data-open-target="section-2" data-open-target-group="accordion" class="js-open-target AccordionAnimated-title">Section 2 - Group 1</dt>
+                    <dd data-target="section-2" class="AccordionAnimated-content">
+                        <div class="Content">
+                            <p>And so began the journey north to safety, to our place in the sun. Among us we found a new leader - the man who came from the sky... the Gyro-Captain. And just as Pappagallo had planned, we traveled far beyond the reach of men on machines.</p>
+                            <p>The juice, the precious juice, was hidden in the vehicles.</p>
+                        </div>
+                    </dd>
+                    <dt data-open-target="section-3" data-open-target-group="accordion" class="js-open-target AccordionAnimated-title">Section 3 - Group 1</dt>
+                    <dd data-target="section-3" class="AccordionAnimated-content">
+                        <div class="Content">
+                            <p>What is it with you, huh? What are you looking for? C'mon, Max, everybody's looking for something. You're happy out there, are you? Eh? Wandering? One day blurring into another? You're a scavenger, Max. You're a maggot. Did you know that? You're living off the corpse of the old world.</p>
+                            <p>Tell me your story, Max. C'mon. Tell me your story. What burned you out, huh? Kill one man too many? See too many people die? Lose some family?</p>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section> 
+                <header><h1>Accordion animated (group 2)</h1></header>
+                <dl class="AccordionAnimated js-load-accordion-ajax">
+                    
+                </dl>
+            </section>
+            <section>
+                <p><button data-open-target="hidden-layer" class="js-open-target Button">Open Hidden layer</button></p>
+                <div data-target="hidden-layer" class="is-animatedHeight is-hidden">
+                    <p>My life fades. The vision dims. All that remains are memories. I remember a time of chaos... ruined dreams... this wasted land. But most of all, I remember The Road Warrior. The man we called "Max." To understand who he was, you have to go back to another time... when the world was powered by the black fuel... and the desert sprouted great cities of pipe and steel. Gone now... swept away. For reasons long forgotten, two mighty warrior tribes went to war, and touched off a blaze which engulfed them all. Without fuel they were nothing.</p>
+
+                    <p>They'd built a house of straw. The thundering machines sputtered and stopped. Their leaders talked and talked and talked. But nothing could stem the avalanche. Their world crumbled. The cities exploded. A whirlwind of looting, a firestorm of fear. Men began to feed on men. On the roads it was a white line nightmare. Only those mobile enough to scavenge, brutal enough to pillage would survive. The gangs took over the highways, ready to wage war for a tank of juice. And in this maelstrom of decay, ordinary men were battered and smashed... men like Max... the warrior Max.</p>
+                </div>
+            </section>
+
+            <script class="js-accordion-template" type="text/template">
+                {{#accordionItems}}
+                    <dt data-open-target="{{section}}" data-open-target-group="{{group}}" class="js-open-target-ajax AccordionAnimated-title">{{title}}</dt>
+                    <dd data-target="{{section}}" class="AccordionAnimated-content">
+                        <div class="Content">
+                            <p>{{content}}</p>
+                        </div>
+                    </dd>
+                {{/accordionItems}}
+            </script>
+            <script class="js-loading-spinner" type="text/template">
+                <div class='LoadingSpinner'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </script>
+
+        </div>
+        <footer class="Footer">
+            <div class="Content">
+                <p>By <a href="http://joanclaret.github.io" title="Joan Claret">Joan Claret</a></p>
+            </div>
+        </footer>
+
+        <!-- Load scripts-->
+        <script src="dist/js/main.min.js"></script>
+    </body>
+</html> 

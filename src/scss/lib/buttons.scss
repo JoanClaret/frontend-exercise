@@ -1,0 +1,17 @@
+/**
+ * Buttons
+ */
+
+.Button {
+  background-color: $button-bg;
+  border: 0;
+  border-radius: $radius;
+  color: $button-color;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: background-color $animation-duration $animation-transition;
+
+  &:hover {
+    background-color: lighten($button-bg, 7%);
+  }
+}

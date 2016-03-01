@@ -1,0 +1,13 @@
+/**
+ * Layout
+ */
+
+.PageContent {
+  margin: 0 auto;
+  max-width: $page-max-width;
+  padding: $gutter-width $gutter-width / 2;
+}
+
+.Content {
+  padding: $gutter-width / 2;
+}

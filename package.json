@@ -1,0 +1,35 @@
+{
+  "name": "accordion-animated",
+  "version": "1.0.0",
+  "description": "Frontend Exercise",
+  "main": "",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cache": "~0.2.8",
+    "gulp-concat": "~2.5.2",
+    "gulp-cssnano": "~2.1.1",
+    "gulp-livereload": "^3.7.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "~1.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.3",
+    "http-server": "^0.9.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^2.2.1",
+    "mustache": "^2.2.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "author": "joanclaret <dpam23@gmail.com>",
+  "license": "MIT"
+}

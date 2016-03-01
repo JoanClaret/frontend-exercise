@@ -1,0 +1,11 @@
+/**
+ * Helpers
+ */
+
+.is-animatedHeight {
+  transition: height 250ms ease-in-out;
+}
+
+.is-hidden {
+  display: none;
+}
