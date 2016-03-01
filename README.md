@@ -72,8 +72,8 @@ En la carpeta `./src/js` encontraréis:
 El entorno del ejercicio está montado con npm, gulp y browserify.
 
 Instrucciones:
-`npm start` Incializa un servidor (para habilitar live-reload).
-`gulp styles` Compila SCSS a CSS y minifica.
-`gulp scripts` Compila JS y minifica.
-`gulp watch` Busca cambios en los ficheros css y js de la carpeta `/src`, ejecuta tareas de compilación, y envia una señal al navegador para recargar los ficheros (live-reload).
-`gulp` Tarea "default". Ejecuta `gulp styles`  y `gulp scripts`.
+-`npm start` Incializa un servidor (para habilitar live-reload).
+-`gulp styles` Compila SCSS a CSS y minifica.
+-`gulp scripts` Compila JS y minifica.
+-`gulp watch` Busca cambios en los ficheros css y js de la carpeta `/src`, ejecuta tareas de compilación, y envia una señal al navegador para recargar los ficheros (live-reload).
+-`gulp` Tarea "default". Ejecuta `gulp styles`  y `gulp scripts`.
