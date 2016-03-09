@@ -7,22 +7,22 @@ body {
 }
 
 a {
-	color: $link-color;
-	text-decoration: none;
+  color: $link-color;
+  text-decoration: none;
 
-	&:hover {
-		color: lighten($link-color, 10%);
-	}
+  &:hover {
+    color: lighten($link-color, 10%);
+  }
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-weight: 300;
+  font-weight: 300;
   line-height: $heading-line-height;
 }
 
 .TextBig {
-	font-size: 2em;
+  font-size: 2em;
 }
