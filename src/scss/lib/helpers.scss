@@ -3,7 +3,7 @@
  */
 
 .is-animatedHeight {
-  transition: height 250ms ease-in-out;
+  transition: height $animation-duration ease-in-out;
 }
 
 .is-hidden {
